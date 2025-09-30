@@ -20,9 +20,9 @@ vi /etc/docker/daemon.json
 systemctl start docker
 ```
 
-### TigerVNC
+### TigerVNC Setup
 
-## Install on server you'd like to connect into
+Install on server you'd like to connect into
 References: https://docs.aws.amazon.com/linux/al2023/ug/vnc-configuration-al2023.html#:~:text=On%20this%20page,the%20Amazon%20EC2%20User%20Guide.
 ```
 sudo dnf groupinstall "Desktop" -y
