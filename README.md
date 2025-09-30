@@ -47,11 +47,9 @@ sudo vi /etc/tigervnc/vncserver-config-defaults
 
 # Start VNC
 sudo systemctl start vncserver@:1
-
-On your local box:
-ssh -i <keypair> -L 5901:localhost:5901 ec2-user@<address>
 ```
 
-
-### on your local box:
-ssh -i sum-pair.pem -L 5901:localhost:5901 ec2-user@ec2-35-87-122-220.us-west-2.compute.amazonaws.co
+On your local box:
+```
+ssh -i <keypair> -L 5901:localhost:5901 ec2-user@<address>
+```
