@@ -1,25 +1,26 @@
 #########################################################################
-## How to mount a volume for Docker
+### How to mount a volume for Docker
 
-### Note: only do this if you're using a mounted ebs volume 
+```
+# Note: only do this if you're using a mounted ebs volume 
 
-### Stop Docker
+# Stop Docker
 systemctl stop docker
 
-### Move the data
+# Move the data
 mv /var/lib/docker /path/to/new/location
-### i.e. /var/lib/docker /data/
+# i.e. /var/lib/docker /data/
 
-### Update Docker's configuration
+# Update Docker's configuration
 vi /etc/docker/daemon.json
   # Add: {"data-root": "/path/to/new/location"}
   # i.e. {"data-root": "/data/docker"}
 
-### Restart Docker
+# Restart Docker
 systemctl start docker
-
+```
 #########################################################################
-## TigerVNC
+### TigerVNC
 
 ## Install on server you'd like to connect into
 References: https://docs.aws.amazon.com/linux/al2023/ug/vnc-configuration-al2023.html#:~:text=On%20this%20page,the%20Amazon%20EC2%20User%20Guide.
