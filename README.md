@@ -1,4 +1,4 @@
-#########################################################################
+
 ### How to mount a volume for Docker
 
 ```
@@ -19,7 +19,7 @@ vi /etc/docker/daemon.json
 # Restart Docker
 systemctl start docker
 ```
-#########################################################################
+
 ### TigerVNC
 
 ## Install on server you'd like to connect into
